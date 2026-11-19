@@ -7,15 +7,25 @@
 - Video, audio and perceived A/V synchronization worked with default `-vsync` behavior.
 - Current iPad screen mirroring has acceptable observed Apple Pencil latency for the intended workflow; no latency tuning in this version.
 
-## GUI implementation included but needing end-to-end testing
+## GUI real-device validation — 2026-11-19
 
-- PySide6 window; starts/stops its own UxPlay child process.
+The developer supplied screenshots from the installed Windows 11 GUI v0.1.1 showing:
+- The GUI reported **화면 미러링 중** (Screen Mirroring Active).
+- One previously PIN-authorized iPad was recognized in the GUI.
+- A mirrored presentation slide was displayed in the Windows **Direct3D11 renderer** window.
+- The GUI event log recorded the beginning of mirroring.
+
+**Verified in this test:** launching/controlling the receiver through the GUI and successful mirroring with an already registered iPad. **Not independently established by these screenshots:** stopping the current session from the GUI, first-time PIN enrollment through the GUI, audible sound, or reproducibility on other PCs. No personal screenshot or machine-specific file path is committed to this repository.
+
+## GUI features still needing end-to-end testing
+
+- PySide6 window; successfully started the UxPlay receiver for the observed mirroring session; stopping needs separate confirmation.
 - Reads the local registry internally and hides device identifiers from the interface.
 - Dedicated new-device PIN pairing mode, count of registered devices and connection status.
 - Audio enable/disable setting applies when the receiver starts, **not during streaming**.
 - 11 unit tests passed in the user's Windows environment in the prior version and can be rerun after replacing the test-only public key fixture.
 
-**A successful direct UxPlay run is not the same as verified end-to-end GUI operation.** GUI start/stop, PIN enrollment, multi-display behavior and error recovery remain to be tested on Windows.
+**Successful GUI startup and mirroring of a previously registered device are now observed.** GUI stop, new-device PIN enrollment, multi-display behavior and error recovery still need separate tests on Windows.
 
 ## Planned (not implemented)
 
