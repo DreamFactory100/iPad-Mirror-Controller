@@ -32,7 +32,7 @@ Live mute/volume control, a system-tray controller, full-screen/window managemen
 | --- | --- |
 | UxPlay mirroring, audio and A/V sync | Worked on the developer's Windows 11/iPad test environment when run directly |
 | One-time PIN pairing and reconnection | Worked with a locally built, adjusted UxPlay receiver |
-| PySide6 GUI v0.1.1 | Code and automated tests passed; full start/stop and pairing workflow **not yet verified end-to-end** on Windows |
+| PySide6 GUI v0.1.1 | Developer verified GUI start, mirroring, stop/restart, PIN-free reconnection and new-device PIN registration on the development PC; compatibility with other PCs not yet confirmed |
 | Automated tests | 11 Python unit tests passed on the developer's Windows PC; can be rerun below |
 | Portable Windows installer | Not available |
 
