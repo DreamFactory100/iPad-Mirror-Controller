@@ -15,17 +15,17 @@ The developer supplied screenshots from the installed Windows 11 GUI v0.1.1 show
 - A mirrored presentation slide was displayed in the Windows **Direct3D11 renderer** window.
 - The GUI event log recorded the beginning of mirroring.
 
-**Verified by the supplied screenshots:** launching/controlling the receiver through the GUI and successful mirroring with an already registered iPad. **Additionally confirmed by the developer's follow-up functional test:** pressing GUI **서버 중단** (Stop Server) closed the stream and returned the GUI to its stopped state; starting again enabled PIN-free reconnection of the registered iPad. **Still untested in this GUI workflow:** new-device PIN enrollment, audible sound, and reproducibility on other PCs. No personal screenshot or machine-specific file path is committed to this repository.
+**Verified by the supplied screenshots:** launching/controlling the receiver through the GUI and successful mirroring with an already registered iPad. **Additionally confirmed by the developer's follow-up functional test:** pressing GUI **서버 중단** (Stop Server) closed the stream and returned the GUI to its stopped state; starting again enabled PIN-free reconnection of the registered iPad. **Follow-up test reported by the developer on 2026-11-19:** GUI **새 iPad 등록 (PIN)** (Register New iPad) entered enrollment mode and displayed a four-digit PIN, as shown in two screenshots. The developer reports successfully pairing a different device. The screenshots themselves establish the enrollment dialog and PIN-display stage, not independently the completed pairing. **Still not verified:** audio specifically through GUI and reproducibility on another PC. No personal screenshot or machine-specific file path is committed to this repository.
 
 ## GUI features still needing end-to-end testing
 
 - PySide6 window; GUI start, stop, and PIN-free reconnection of the previously registered iPad confirmed by the developer.
 - Reads the local registry internally and hides device identifiers from the interface.
-- Dedicated new-device PIN pairing mode, count of registered devices and connection status.
+- New-device PIN pairing mode was used successfully with a second device according to the developer's functional test; screenshots show enrollment mode and PIN generation. The registered-device count and other connection behaviors remain as implemented.
 - Audio enable/disable setting applies when the receiver starts, **not during streaming**.
 - 11 unit tests passed in the user's Windows environment in the prior version and can be rerun after replacing the test-only public key fixture.
 
-**GUI startup, mirroring and stop/restart without a repeated PIN for a previously registered iPad are now confirmed.** New-device PIN enrollment, multi-display behavior and error recovery still need separate tests on Windows.
+**GUI startup, mirroring, stop/restart without repeated PIN, and registration of a different device (developer-reported) have now been tested on the development PC.** Multi-display behavior, GUI audio and error recovery still need separate checks.
 
 ## Planned (not implemented)
 
