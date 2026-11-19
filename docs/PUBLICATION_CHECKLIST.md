@@ -1,0 +1,23 @@
+# Publication and distribution checklist
+
+**Status:** Public-source *candidate*, **not yet cleared for public end-user use/distribution**. This checklist does not grant a software license.
+
+## Required before an open-source Public release
+
+- [ ] **Choose the controller's own license** and add its complete `LICENSE` file. Without one, GitHub visibility does not grant broad rights to use, modify or redistribute the code. GPL-3.0-only is one potential copyleft choice aligned with UxPlay's GPLv3; other compatible choices are possible for a separate controller. Assess your intended commercial/distribution strategy before granting rights, as existing grants cannot simply be revoked for prior recipients.
+- [x] Remove real paired-device identifiers, key material, runtime settings and logs from candidate files; tests use synthetic fixtures.
+- [x] Omit the Apple-branded local `.ico` from the public-candidate archive. The original development machine's icon remains unchanged.
+- [ ] Pick an original, unbranded icon and decide whether the product name should emphasize compatibility rather than imply Apple endorsement.
+- [x] Clearly identify original controller code versus third-party UxPlay and other dependencies.
+- [x] Distinguish implemented features from roadmap and direct UxPlay testing from not-yet-performed GUI end-to-end tests.
+
+## Recommended before announcing a version for general users
+
+- [ ] Verify GUI launch, normal pairing, first-time PIN enrollment, stop/relaunch, audio and Windows desktop interaction in a clean Windows environment.
+- [ ] Document a reproducible compatible UxPlay version/build or provide a properly licensed installer and dependency package.
+- [ ] Test on another Windows computer and iPad and capture redacted screenshots.
+- [ ] Check Windows Defender and local-network firewall behavior without broadly disabling system protections.
+- [ ] Audit the licenses of any binaries/plugins you eventually distribute (UxPlay GPLv3, GStreamer plugin licenses, Qt/PySide6, Bonjour SDK distribution rights).
+- [ ] Add release version, dated notes, support scope and known issues.
+
+**Do not confuse a public source repository with a one-click application download.** This project currently requires substantial manual setup; it is not a prebuilt Windows installable program.

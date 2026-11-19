@@ -1,0 +1,41 @@
+# Python / local environment
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Personal user configuration / credentials / device pairing
+settings.local.json
+*.pem
+*.register
+*.key
+*.p12
+*.pfx
+*.env
+.env.*
+
+# Local outputs
+*.log
+build/
+dist/
+*.spec
+
+# Local editor / OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Personal backup variants / captured diagnostics
+*.pem.*
+*.register.*
+*.key.*
+*.secret
+*.har
+local/
+private/
+logs/
+captures/
+
+# Generated archives should be stored outside the source repository
+*.zip
