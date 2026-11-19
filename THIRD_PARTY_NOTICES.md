@@ -12,4 +12,4 @@ This is a **development snapshot** of an independent GUI controller. No third-pa
 
 **Scope:** the present repository contains original Python controller code, documentation, and tests only; the Apple-branded local `.ico` is not shipped. No UxPlay code, `uxplay.exe`, the Bonjour SDK, MSYS2 runtime, GStreamer components or private registration material is provided.
 
-**Not a license grant:** this document is an acknowledgement of upstream projects, **not** a substitute for their actual license texts or legal review. The controller's own distribution license has not yet been selected. Confirm compatibility and attribution requirements before offering a public release.
+**Not a license grant:** this document is an acknowledgement of upstream projects, **not** a substitute for their actual license texts or legal review. The repository's original GUI/controller code is distributed under the [MIT License](LICENSE), copyright (c) 2026 DreamFactory100. This MIT grant **does not change** the terms of UxPlay or other third-party dependencies. Confirm compatibility and attribution requirements before offering a bundled application release.
