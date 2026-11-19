@@ -10,6 +10,7 @@
 - [ ] Pick an original, unbranded icon and decide whether the product name should emphasize compatibility rather than imply Apple endorsement.
 - [x] Clearly identify original controller code versus third-party UxPlay and other dependencies.
 - [x] Distinguish implemented features from roadmap and direct UxPlay testing from not-yet-performed GUI end-to-end tests.
+- [x] Expand the developer-oriented Windows source setup guide with MSYS2/UCRT64 preparation, UxPlay build outline, pairing paths, GUI labels and safe troubleshooting; distinguish tested 1.73.7 from newer untested configurations.
 
 ## Recommended before announcing a version for general users
 
