@@ -13,7 +13,8 @@
 
 ## Recommended before announcing a version for general users
 
-- [ ] Verify GUI launch, normal pairing, first-time PIN enrollment, stop/relaunch, audio and Windows desktop interaction in a clean Windows environment.
+- [x] On the developer's Windows PC: verify GUI launch, mirroring, stop/relaunch, PIN-free reconnection and first-time PIN enrollment of a different device (reported successful by developer; screenshots show the PIN stage).
+- [ ] Verify audio via the GUI, desktop interaction, and the full workflow on a clean Windows environment or another PC.
 - [ ] Document a reproducible compatible UxPlay version/build or provide a properly licensed installer and dependency package.
 - [ ] Test on another Windows computer and iPad and capture redacted screenshots.
 - [ ] Check Windows Defender and local-network firewall behavior without broadly disabling system protections.
