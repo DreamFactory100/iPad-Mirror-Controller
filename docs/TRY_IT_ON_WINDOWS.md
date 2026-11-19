@@ -135,7 +135,7 @@ The 11 Python unit tests passed in the developer's earlier Windows test. The dev
 - This repository contains only the original **GUI/controller source**, tests and documentation. It is **not** a UxPlay fork.
 - Not bundled: UxPlay binary/source/patch, MSYS2, GStreamer, Bonjour SDK, keys, registered-device IDs, user's settings or an installer.
 - Do not commit `.pem`, `.register`, `settings.local.json`, logs, private screen captures or network credentials. Check staged changes even when `.gitignore` is present.
-- UxPlay is a separate GPLv3 project; other components have their own licenses. The license for this controller remains **unselected** pending the maintainer's public-release decision.
+- Original controller code is under the [MIT License](../LICENSE), copyright (c) 2026 DreamFactory100. UxPlay remains a separate GPLv3 project, and other components retain their own license terms; MIT does not relicense those dependencies.
 - This is an independent, unofficial project and is not affiliated with or endorsed by Apple. The developer's Apple-branded personal shortcut icon is **not** part of the published source.
 
 Further details: [Privacy and security](SECURITY_AND_PRIVACY.md) · [Development status](development-status.md) · [Third-party notices](../THIRD_PARTY_NOTICES.md).
