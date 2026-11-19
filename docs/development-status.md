@@ -15,17 +15,17 @@ The developer supplied screenshots from the installed Windows 11 GUI v0.1.1 show
 - A mirrored presentation slide was displayed in the Windows **Direct3D11 renderer** window.
 - The GUI event log recorded the beginning of mirroring.
 
-**Verified in this test:** launching/controlling the receiver through the GUI and successful mirroring with an already registered iPad. **Not independently established by these screenshots:** stopping the current session from the GUI, first-time PIN enrollment through the GUI, audible sound, or reproducibility on other PCs. No personal screenshot or machine-specific file path is committed to this repository.
+**Verified by the supplied screenshots:** launching/controlling the receiver through the GUI and successful mirroring with an already registered iPad. **Additionally confirmed by the developer's follow-up functional test:** pressing GUI **서버 중단** (Stop Server) closed the stream and returned the GUI to its stopped state; starting again enabled PIN-free reconnection of the registered iPad. **Still untested in this GUI workflow:** new-device PIN enrollment, audible sound, and reproducibility on other PCs. No personal screenshot or machine-specific file path is committed to this repository.
 
 ## GUI features still needing end-to-end testing
 
-- PySide6 window; successfully started the UxPlay receiver for the observed mirroring session; stopping needs separate confirmation.
+- PySide6 window; GUI start, stop, and PIN-free reconnection of the previously registered iPad confirmed by the developer.
 - Reads the local registry internally and hides device identifiers from the interface.
 - Dedicated new-device PIN pairing mode, count of registered devices and connection status.
 - Audio enable/disable setting applies when the receiver starts, **not during streaming**.
 - 11 unit tests passed in the user's Windows environment in the prior version and can be rerun after replacing the test-only public key fixture.
 
-**Successful GUI startup and mirroring of a previously registered device are now observed.** GUI stop, new-device PIN enrollment, multi-display behavior and error recovery still need separate tests on Windows.
+**GUI startup, mirroring and stop/restart without a repeated PIN for a previously registered iPad are now confirmed.** New-device PIN enrollment, multi-display behavior and error recovery still need separate tests on Windows.
 
 ## Planned (not implemented)
 
