@@ -4,7 +4,7 @@
 
 ## Required before an open-source Public release
 
-- [ ] **Choose the controller's own license** and add its complete `LICENSE` file. Without one, GitHub visibility does not grant broad rights to use, modify or redistribute the code. GPL-3.0-only is one potential copyleft choice aligned with UxPlay's GPLv3; other compatible choices are possible for a separate controller. Assess your intended commercial/distribution strategy before granting rights, as existing grants cannot simply be revoked for prior recipients.
+- [x] **License the original controller source under MIT** and add the complete [`LICENSE`](../LICENSE) file (copyright 2026 DreamFactory100). This is a permissive grant for original code; separate UxPlay and other upstream components retain their own licensing obligations. Future distribution of bundled components still needs independent license review.
 - [x] Remove real paired-device identifiers, key material, runtime settings and logs from candidate files; tests use synthetic fixtures.
 - [x] Omit the Apple-branded local `.ico` from the public-candidate archive. The original development machine's icon remains unchanged.
 - [ ] Pick an original, unbranded icon and decide whether the product name should emphasize compatibility rather than imply Apple endorsement.
