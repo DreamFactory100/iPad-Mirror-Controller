@@ -49,13 +49,13 @@ py -3.12 -m venv .venv
 & ".\.venv\Scripts\python.exe" ".\main.py"
 ```
 
-After launching, verify that **UxPlay 실행 파일**, **PIN 인증키 파일** and **등록 정보 파일** refer to your own local files. Do not copy another person's pairing secrets.
+After launching, verify that **UxPlay 실행 파일** (UxPlay Executable), **PIN 인증키 파일** (PIN Authentication Key File) and **등록 정보 파일** (Registration File) refer to your own local files. Do not copy another person's pairing secrets.
 
 ### Basic operation
 
-1. For a previously registered iPad, press **서버 시작** and select the UxPlay receiver in iPad **화면 미러링**. A new PIN is normally unnecessary when valid local registration data and the same receiver key are used.
-2. For a new iPad, choose **새 iPad 등록 (PIN)** *only on a trusted private network*, enter the displayed PIN on that iPad, then stop enrollment and restart the server in normal mode.
-3. Press **서버 중단** to stop the receiver process launched by the GUI.
+1. For a previously registered iPad, press **서버 시작** (Start Server) and select the UxPlay receiver in the iPad's **화면 미러링** (Screen Mirroring) menu. A new PIN is normally unnecessary when valid local registration data and the same receiver key are used.
+2. For a new iPad, choose **새 iPad 등록 (PIN)** (Register New iPad) *only on a trusted private network*, enter the displayed PIN on that iPad, then stop enrollment and restart the server in normal mode.
+3. Press **서버 중단** (Stop Server) to stop the receiver process launched by the GUI.
 
 **Security behavior:** normal mode restricts connections to device IDs read internally from the local UxPlay registry. Enrollment mode temporarily permits new devices to attempt PIN pairing on the local network; return to normal mode afterward. Pairing keys/registration state are local runtime data, not repository files.
 
